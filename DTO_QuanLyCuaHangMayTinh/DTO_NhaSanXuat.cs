@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace DTO_QuanLyCuaHangMayTinh
 {
-    class DTO_NhaSanXuat
+    public class DTO_NhaSanXuat
     {
+        public string maNhaSanXuat { get; set; }
+        public string tenNhaSanXuat { get; set; }
+        public byte[] logo { get; set; }
     }
 }

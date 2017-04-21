@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DTO_QuanLyCuaHangMayTinh
 {
-    class DTO_TaiKhoan
+    class DTO_NhomNhanVien
     {
-        public string maNhanVien { get; set; }
-        public string matKhau { get; set; }
+        public string maNhomNhanVien { get; set; }
+        public string tenNhomNhanVien { get; }
     }
 }

@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace DTO_QuanLyCuaHangMayTinh
 {
-    class DTO_Phieu
+    class DTO_NhomPhieu
     {
-        public string maPhieu { get; set; }
-        public string maNhanVien { get; set; }
         public string maNhomPhieu { get; set; }
-        public DateTime ngayLap { get; set; }
+        public string tenNhomPhieu { get; set; }
     }
 }
