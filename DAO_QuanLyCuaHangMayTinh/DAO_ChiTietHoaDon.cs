@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAO_QuanLyCuaHangMayTinh
 {
-    class DAO_ChiTietHoaDon
+    public class DAO_ChiTietHoaDon
     {
         public void layThongTinHoaDon()
         {

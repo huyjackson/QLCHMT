@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO_QuanLyCuaHangMayTinh", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO_QuanLyCuaHangMayTinh", "DAO_QuanLyCuaHangMayTinh\DAO_QuanLyCuaHangMayTinh.csproj", "{BC07C291-202E-4A04-BACA-8DC6F702C47E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI_QuanLyCuaHangMayTinh", "GUI_QuanLyCuaHangMayTinh\GUI_QuanLyCuaHangMayTinh.csproj", "{B3ADEC17-2A0E-46F5-96FD-B2B277C25522}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BUS_QuanLyCuaHangMayTinh", "BUS_QuanLyCuaHangMayTinh\BUS_QuanLyCuaHangMayTinh.csproj", "{4963A62B-0381-46B2-A9CC-2C91154C9535}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{BC07C291-202E-4A04-BACA-8DC6F702C47E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC07C291-202E-4A04-BACA-8DC6F702C47E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC07C291-202E-4A04-BACA-8DC6F702C47E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3ADEC17-2A0E-46F5-96FD-B2B277C25522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3ADEC17-2A0E-46F5-96FD-B2B277C25522}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3ADEC17-2A0E-46F5-96FD-B2B277C25522}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3ADEC17-2A0E-46F5-96FD-B2B277C25522}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4963A62B-0381-46B2-A9CC-2C91154C9535}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4963A62B-0381-46B2-A9CC-2C91154C9535}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4963A62B-0381-46B2-A9CC-2C91154C9535}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4963A62B-0381-46B2-A9CC-2C91154C9535}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

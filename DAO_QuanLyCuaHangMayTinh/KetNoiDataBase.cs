@@ -10,15 +10,15 @@ namespace DAO_QuanLyCuaHangMayTinh
 {
     public class KetNoiDataBase
     {
+        private static string ChuoiKetNoi = @"Data Source=GHOST996\SQLEXPRESS;Initial Catalog=QLCHMT_1453017_1453025;Integrated Security=True";
         public static SqlConnection ketNoi;
-        private static string ChuoiKetNoi = @"Data Source=DESKTOP-I3MUKIT\SQLEXPRESS;
-            Initial Catalog=QLCHMT_1453017_1453025;Integrated Security=True";
         public static void moKetNoi()
         {
             if(ketNoi == null)
             {
                 ketNoi = new SqlConnection(ChuoiKetNoi);
             }
+
             if(ketNoi.State != System.Data.ConnectionState.Open)
             {
                 ketNoi.Open();
@@ -34,6 +34,11 @@ namespace DAO_QuanLyCuaHangMayTinh
                     ketNoi.Close();
                 }
             }
+        }
+
+        internal static string layGiaTri(object cauLenhTruyVan)
+        {
+            throw new NotImplementedException();
         }
 
         public static void thucThiCauLenh(string cauLenhTruyVan)
@@ -70,7 +75,7 @@ namespace DAO_QuanLyCuaHangMayTinh
 
         public static string layGiaTri(string cauLenhTruyVan)
         {
-            string ketQua = null;
+            string ketQua = string.Empty;
             try
             {
                 moKetNoi();

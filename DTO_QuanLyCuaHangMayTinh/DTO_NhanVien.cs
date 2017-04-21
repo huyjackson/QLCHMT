@@ -19,7 +19,5 @@ namespace DTO_QuanLyCuaHangMayTinh
         public DateTime ngayVaoLam { get; set; }
         public DateTime ngayTraLuongCuoiCung { get; set; }
         public int tinhTrang { get; set; }
-
-
     }
 }
