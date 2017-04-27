@@ -37,5 +37,10 @@ namespace DAO_QuanLyCuaHangMayTinh
             return danhsach;
         }
 
+        public string layTen(string maso)
+        {
+            return KetNoiDataBase.layGiaTri(@"select TenNhaSanXuat from tb_NhaSanXuat where MaNhaSanXuat = '" + maso + "' and TinhTrang = 1");
+        }
+
     }
 }

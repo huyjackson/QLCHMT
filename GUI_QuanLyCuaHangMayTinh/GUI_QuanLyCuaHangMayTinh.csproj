@@ -60,6 +60,12 @@
     <Compile Include="fr_DangNhap.Designer.cs">
       <DependentUpon>fr_DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="NhanVienQuanLy\fr_CapNhatHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVienQuanLy\fr_CapNhatHangHoa.Designer.cs">
+      <DependentUpon>fr_CapNhatHangHoa.cs</DependentUpon>
+    </Compile>
     <Compile Include="NhanVienQuanLy\fr_ManHinhChinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +88,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fr_DangNhap.resx">
       <DependentUpon>fr_DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVienQuanLy\fr_CapNhatHangHoa.resx">
+      <DependentUpon>fr_CapNhatHangHoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhanVienQuanLy\fr_ManHinhChinh.resx">
       <DependentUpon>fr_ManHinhChinh.cs</DependentUpon>

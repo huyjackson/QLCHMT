@@ -21,5 +21,11 @@ namespace BUS_QuanLyCuaHangMayTinh
         {
             return daonsx.layDanhSach();
         }
+
+        public string layTen(string maso)
+        {
+            return daonsx.layTen(maso);
+        }
+
     }
 }

@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DAO_QuanLyCuaHangMayTinh</RootNamespace>
     <AssemblyName>DAO_QuanLyCuaHangMayTinh</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,7 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DTO_QuanLyCuaHangMayTinh">
+    <Reference Include="DTO_QuanLyCuaHangMayTinh, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DTO_QuanLyCuaHangMayTinh\bin\Debug\DTO_QuanLyCuaHangMayTinh.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -48,6 +50,7 @@
     <Compile Include="DAO_HangHoa.cs" />
     <Compile Include="DAO_HoaDon.cs" />
     <Compile Include="DAO_KhachHang.cs" />
+    <Compile Include="DAO_LoaiHangHoa.cs" />
     <Compile Include="DAO_NhanVien.cs" />
     <Compile Include="DAO_NhaSanXuat.cs" />
     <Compile Include="DAO_NhomHangHoa.cs" />

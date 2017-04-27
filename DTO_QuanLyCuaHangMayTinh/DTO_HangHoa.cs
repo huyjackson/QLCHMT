@@ -19,5 +19,6 @@ namespace DTO_QuanLyCuaHangMayTinh
         public int soLuongTrongKho { get; set; }
         public int soLuongTrungBay { get; set; }
         public string ghiChu { get; set; }
+        public int tinhTrang { get; set; }
     }
 }

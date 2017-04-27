@@ -22,5 +22,10 @@ namespace BUS_QuanLyCuaHangMayTinh
             return daolhh.layDanhSach();
         }
 
+        public string layTen(string maloai)
+        {
+            return daolhh.layTen(maloai);
+        }
+
     }
 }

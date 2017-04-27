@@ -26,7 +26,9 @@ namespace GUI_QuanLyCuaHangMayTinh
 
         private void fr_DangNhap_Load(object sender, EventArgs e)
         {
-            this.AcceptButton = btnDangNhap;
+            txtMatKhau.Text = "123456";
+            txtTenDangNhap.Text = "ad001";
+            AcceptButton = btnDangNhap;
         }
 
         private void btnDangNhap_Click(object sender, EventArgs e)

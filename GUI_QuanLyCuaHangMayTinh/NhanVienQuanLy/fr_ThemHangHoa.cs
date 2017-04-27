@@ -27,9 +27,10 @@ namespace GUI_QuanLyCuaHangMayTinh.NhanVienQuanLy
 
         private void fr_ThemHangHoa_Load(object sender, EventArgs e)
         {
+            AcceptButton = btThemAnh;
             txtMaHangHoa.Text = bushh.taoMaSoMoi();
-            taoComboboxLoaiHangHoa();
-            taoComboboxNhaSanXuat();
+            CNghiepVu.taoComboboxLoaiHangHoa(cbLoaiHangHoa);
+            CNghiepVu.taoComboboxNhaSanXuat(cbNhaSanXuat);
         }
 
         protected void clearForm()
@@ -45,26 +46,6 @@ namespace GUI_QuanLyCuaHangMayTinh.NhanVienQuanLy
             txtMaHangHoa.Text = bushh.taoMaSoMoi();
         }
 
-        protected void taoComboboxLoaiHangHoa()
-        {
-            string[] dsloaihanghoa = buslhh.layDanhSach().ToArray();
-            for (int i = 0; i < dsloaihanghoa.Length; i++)
-            {
-                cbLoaiHangHoa.Items.Add(dsloaihanghoa[i]);
-            }
-            cbLoaiHangHoa.SelectedIndex = 0;
-        }
-
-        protected void taoComboboxNhaSanXuat()
-        {
-            string[] dsnhasanxuat = busnsx.layDanhSach().ToArray();
-            for (int i = 0; i < dsnhasanxuat.Length; i++)
-            {
-                cbNhaSanXuat.Items.Add(dsnhasanxuat[i]);
-            }
-            cbNhaSanXuat.SelectedIndex = 0;
-        }
-
         protected DTO_HangHoa layThongTin()
         {
             DTO_HangHoa hanghoa = new DTO_HangHoa();
@@ -78,8 +59,9 @@ namespace GUI_QuanLyCuaHangMayTinh.NhanVienQuanLy
             hanghoa.soLuongTrungBay = 10;
             hanghoa.maNhomHangHoa = buslhh.layMaLoaiHangHoa(cbLoaiHangHoa.Text);
             hanghoa.maNhaSanXuat = busnsx.layMaNhaSanXuat(cbNhaSanXuat.Text);
-            hanghoa.hinhAnh = CNghiepVu.ChuyenHinhAnhThanhNhiPhan(picAnhHangHoa.Image);
+            hanghoa.hinhAnh = CNghiepVu.chuyenHinhAnhThanhNhiPhan(picAnhHangHoa.Image);
             hanghoa.ghiChu = string.Empty;
+            hanghoa.tinhTrang = 1;
 
             return hanghoa;
         }

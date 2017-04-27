@@ -37,6 +37,7 @@ namespace GUI_QuanLyCuaHangMayTinh.NhanVienQuanLy
             this.Hide();
             fr_QuanLyHangHoa qlhanghoa = new fr_QuanLyHangHoa();
             qlhanghoa.ShowDialog();
+            this.Show();
         }
     }
 }
