@@ -53,8 +53,10 @@
             this.btnSuaAnh = new System.Windows.Forms.Button();
             this.btnCapNhat = new System.Windows.Forms.Button();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBoxThongTin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAnhHangHoa)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxThongTin
@@ -244,9 +246,9 @@
             this.picAnhHangHoa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picAnhHangHoa.Image = ((System.Drawing.Image)(resources.GetObject("picAnhHangHoa.Image")));
             this.picAnhHangHoa.InitialImage = null;
-            this.picAnhHangHoa.Location = new System.Drawing.Point(12, 12);
+            this.picAnhHangHoa.Location = new System.Drawing.Point(20, 34);
             this.picAnhHangHoa.Name = "picAnhHangHoa";
-            this.picAnhHangHoa.Size = new System.Drawing.Size(263, 301);
+            this.picAnhHangHoa.Size = new System.Drawing.Size(221, 213);
             this.picAnhHangHoa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAnhHangHoa.TabIndex = 16;
             this.picAnhHangHoa.TabStop = false;
@@ -268,7 +270,7 @@
             this.btnSuaAnh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSuaAnh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnSuaAnh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnSuaAnh.Location = new System.Drawing.Point(106, 333);
+            this.btnSuaAnh.Location = new System.Drawing.Point(92, 262);
             this.btnSuaAnh.Name = "btnSuaAnh";
             this.btnSuaAnh.Size = new System.Drawing.Size(75, 23);
             this.btnSuaAnh.TabIndex = 17;
@@ -292,16 +294,26 @@
             // 
             this.openFileDialog.FileName = "openFileDialog1";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.picAnhHangHoa);
+            this.groupBox1.Controls.Add(this.btnSuaAnh);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(261, 301);
+            this.groupBox1.TabIndex = 21;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Hình ảnh hàng hóa";
+            // 
             // fr_CapNhatHangHoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(632, 380);
             this.Controls.Add(this.groupBoxThongTin);
-            this.Controls.Add(this.picAnhHangHoa);
             this.Controls.Add(this.btnTroVe);
-            this.Controls.Add(this.btnSuaAnh);
             this.Controls.Add(this.btnCapNhat);
+            this.Controls.Add(this.groupBox1);
             this.Name = "fr_CapNhatHangHoa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CẬP NHẬT THÔNG TIN HÀNG HÓA";
@@ -309,6 +321,7 @@
             this.groupBoxThongTin.ResumeLayout(false);
             this.groupBoxThongTin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAnhHangHoa)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -339,5 +352,6 @@
         private System.Windows.Forms.Button btnSuaAnh;
         private System.Windows.Forms.Button btnCapNhat;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

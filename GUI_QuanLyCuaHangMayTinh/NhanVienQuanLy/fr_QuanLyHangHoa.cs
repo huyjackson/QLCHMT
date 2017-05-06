@@ -25,31 +25,6 @@ namespace GUI_QuanLyCuaHangMayTinh.NhanVienQuanLy
             InitializeComponent();
         }
 
-
-        protected void DinhDinhDangBang()
-        {
-            if (dgvDanhSachHangHoa.RowCount > 0)
-            {
-                for (int i = 0; i < dgvDanhSachHangHoa.Rows.Count; i++)
-                {
-                    dgvDanhSachHangHoa.Rows[i].Height = 80;
-                    ((DataGridViewImageColumn)dgvDanhSachHangHoa.Columns[9]).ImageLayout = DataGridViewImageCellLayout.Stretch;
-                    dgvDanhSachHangHoa.Columns["HinhAnh"].Width = 80;
-                }
-
-                dgvDanhSachHangHoa.DefaultCellStyle.WrapMode = DataGridViewTriState.True; //cài chế độ Wrap cho các ô dữ liệu
-                dgvDanhSachHangHoa.Columns["MaDoChoi"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                dgvDanhSachHangHoa.Columns["SoLuongTrongKho"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                dgvDanhSachHangHoa.Columns["SoLuongNgoaiQuay"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            }
-        }
-
-        protected void HienThiDuLieuLenBang()
-        {
-            //dgvDanhSachDoChoi.DataSource = DichVu.LayDanhSachThongTinDoChoi().Tables[0];
-            DinhDinhDangBang();
-        }
-
         private void btThemHangHoa_Click(object sender, EventArgs e)
         {
             fr_ThemHangHoa themhanghoa = new fr_ThemHangHoa();

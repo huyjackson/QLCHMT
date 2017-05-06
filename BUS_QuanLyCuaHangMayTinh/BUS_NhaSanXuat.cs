@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAO_QuanLyCuaHangMayTinh;
-
+using System.Data;
 
 namespace BUS_QuanLyCuaHangMayTinh
 {
@@ -17,9 +17,9 @@ namespace BUS_QuanLyCuaHangMayTinh
             return daonsx.layMaNhaSanXuat(tennhasanxuat);
         }
 
-        public List<string> layDanhSach()
+        public DataSet layDanhSachNhaSanXuat()
         {
-            return daonsx.layDanhSach();
+            return daonsx.layDanhSachNhaSanXuat();
         }
 
         public string layTen(string maso)

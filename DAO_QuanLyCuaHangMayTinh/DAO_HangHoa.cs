@@ -127,7 +127,6 @@ namespace DAO_QuanLyCuaHangMayTinh
                 KetNoiDataBase.moKetNoi();
                 SqlCom.ExecuteNonQuery();
                 KetNoiDataBase.dongKetNoi();
-
                 return true;
             }
             catch (Exception)

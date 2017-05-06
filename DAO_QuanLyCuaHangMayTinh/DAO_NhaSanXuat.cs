@@ -15,26 +15,13 @@ namespace DAO_QuanLyCuaHangMayTinh
             return KetNoiDataBase.layGiaTri(@"select MaNhaSanXuat from tb_NhaSanXuat where TenNhaSanXuat= N'" + tennhasanxuat + "'");
         }
 
-        public List<string> layDanhSach()
+        public DataSet layDanhSachNhaSanXuat()
         {
-            List<string> danhsach = new List<string>();
-
-            string CauLenhTruyVan = (@"select TenNhaSanXuat from tb_NhaSanXuat");
-
-            KetNoiDataBase.moKetNoi();
-
-            SqlCommand sqlCMD = new SqlCommand(CauLenhTruyVan, KetNoiDataBase.ketNoi);
-
-            IDataReader dtReader = sqlCMD.ExecuteReader();
-
-            while (dtReader.Read())
-            {
-                danhsach.Add((string)dtReader["TenNhaSanXuat"]);
-            }
-
-            KetNoiDataBase.dongKetNoi();
-
-            return danhsach;
+            string cautruyvan = (@"select * from tb_NhaSanXuat");
+            DataSet dt = new DataSet();
+            DataTable tb = KetNoiDataBase.layBang(cautruyvan);
+            dt.Tables.Add(tb);
+            return dt;
         }
 
         public string layTen(string maso)

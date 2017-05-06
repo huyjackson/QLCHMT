@@ -10,7 +10,7 @@ namespace DAO_QuanLyCuaHangMayTinh
 {
     public class KetNoiDataBase
     {
-        private static string ChuoiKetNoi = @"Data Source=GHOST996\SQLEXPRESS;Initial Catalog=QLCHMT_1453017_1453025;Integrated Security=True";
+        private static string ChuoiKetNoi = @"Data Source=NGUYENVUHUY-PC\SQLEXPRESS;Initial Catalog=QLCHMT_1453017_1453025;Integrated Security=True";
         public static SqlConnection ketNoi;
         public static void moKetNoi()
         {

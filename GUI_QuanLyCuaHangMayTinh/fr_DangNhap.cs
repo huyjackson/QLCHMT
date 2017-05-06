@@ -48,7 +48,7 @@ namespace GUI_QuanLyCuaHangMayTinh
                 {
                     this.Hide();
                     new fr_ManHinhChinh().ShowDialog();
-                    this.Show();
+                    this.Close();
                 }
 
                 //if (LoaiNhanVien == "Nhân viên quản lý")

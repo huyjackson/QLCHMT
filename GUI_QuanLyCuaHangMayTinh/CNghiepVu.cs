@@ -52,12 +52,12 @@ namespace GUI_QuanLyCuaHangMayTinh
 
         public static void taoComboboxNhaSanXuat(ComboBox combobox)
         {
-            string[] dsnhasanxuat = busnsx.layDanhSach().ToArray();
-            for (int i = 0; i < dsnhasanxuat.Length; i++)
-            {
-                combobox.Items.Add(dsnhasanxuat[i]);
-            }
-            combobox.SelectedIndex = 0;
+            //string[] dsnhasanxuat = busnsx.layDanhSach().ToArray();
+            //for (int i = 0; i < dsnhasanxuat.Length; i++)
+            //{
+            //    combobox.Items.Add(dsnhasanxuat[i]);
+            //}
+            //combobox.SelectedIndex = 0;
         }
     }
 }

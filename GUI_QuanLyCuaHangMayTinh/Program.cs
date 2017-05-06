@@ -17,7 +17,7 @@ namespace GUI_QuanLyCuaHangMayTinh
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fr_QuanLyHangHoa());
+            Application.Run(new fr_DangNhap());
         }
     }
 }

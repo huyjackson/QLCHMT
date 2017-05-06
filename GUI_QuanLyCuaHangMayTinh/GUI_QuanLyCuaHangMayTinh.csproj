@@ -66,6 +66,12 @@
     <Compile Include="NhanVienQuanLy\fr_CapNhatHangHoa.Designer.cs">
       <DependentUpon>fr_CapNhatHangHoa.cs</DependentUpon>
     </Compile>
+    <Compile Include="NhanVienQuanLy\fr_CapNhatNhaSanXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVienQuanLy\fr_CapNhatNhaSanXuat.Designer.cs">
+      <DependentUpon>fr_CapNhatNhaSanXuat.cs</DependentUpon>
+    </Compile>
     <Compile Include="NhanVienQuanLy\fr_ManHinhChinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,11 +84,23 @@
     <Compile Include="NhanVienQuanLy\fr_QuanLyHangHoa.Designer.cs">
       <DependentUpon>fr_QuanLyHangHoa.cs</DependentUpon>
     </Compile>
+    <Compile Include="NhanVienQuanLy\fr_QuanLyNhaSanXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVienQuanLy\fr_QuanLyNhaSanXuat.Designer.cs">
+      <DependentUpon>fr_QuanLyNhaSanXuat.cs</DependentUpon>
+    </Compile>
     <Compile Include="NhanVienQuanLy\fr_ThemHangHoa.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NhanVienQuanLy\fr_ThemHangHoa.Designer.cs">
       <DependentUpon>fr_ThemHangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVienQuanLy\fr_ThemNhaSanXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVienQuanLy\fr_ThemNhaSanXuat.Designer.cs">
+      <DependentUpon>fr_ThemNhaSanXuat.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -92,14 +110,23 @@
     <EmbeddedResource Include="NhanVienQuanLy\fr_CapNhatHangHoa.resx">
       <DependentUpon>fr_CapNhatHangHoa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NhanVienQuanLy\fr_CapNhatNhaSanXuat.resx">
+      <DependentUpon>fr_CapNhatNhaSanXuat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NhanVienQuanLy\fr_ManHinhChinh.resx">
       <DependentUpon>fr_ManHinhChinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhanVienQuanLy\fr_QuanLyHangHoa.resx">
       <DependentUpon>fr_QuanLyHangHoa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NhanVienQuanLy\fr_QuanLyNhaSanXuat.resx">
+      <DependentUpon>fr_QuanLyNhaSanXuat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NhanVienQuanLy\fr_ThemHangHoa.resx">
       <DependentUpon>fr_ThemHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVienQuanLy\fr_ThemNhaSanXuat.resx">
+      <DependentUpon>fr_ThemNhaSanXuat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -121,6 +148,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NhanVienBanHang\" />
+    <Folder Include="ThuKho\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\manufacturing.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -28,10 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnInDanhSach = new System.Windows.Forms.Button();
-            this.btnSuaThongTin = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btThemHangHoa = new System.Windows.Forms.Button();
             this.dgvDanhSachHangHoa = new System.Windows.Forms.DataGridView();
             this.MaHangHoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenHangHoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,53 +40,24 @@
             this.SoLuongTrungBay = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HinhAnh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSuaThongTin = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnInDanhSach = new System.Windows.Forms.Button();
+            this.btThemHangHoa = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachHangHoa)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnInDanhSach
-            // 
-            this.btnInDanhSach.Location = new System.Drawing.Point(425, 24);
-            this.btnInDanhSach.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnInDanhSach.Name = "btnInDanhSach";
-            this.btnInDanhSach.Size = new System.Drawing.Size(107, 41);
-            this.btnInDanhSach.TabIndex = 5;
-            this.btnInDanhSach.Text = "In danh sách";
-            this.btnInDanhSach.UseVisualStyleBackColor = true;
-            // 
-            // btnSuaThongTin
-            // 
-            this.btnSuaThongTin.Location = new System.Drawing.Point(289, 24);
-            this.btnSuaThongTin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnSuaThongTin.Name = "btnSuaThongTin";
-            this.btnSuaThongTin.Size = new System.Drawing.Size(107, 41);
-            this.btnSuaThongTin.TabIndex = 6;
-            this.btnSuaThongTin.Text = "Sửa thông tin";
-            this.btnSuaThongTin.UseVisualStyleBackColor = true;
-            this.btnSuaThongTin.Click += new System.EventHandler(this.btnSuaThongTin_Click);
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Location = new System.Drawing.Point(155, 24);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(105, 41);
-            this.btnXoa.TabIndex = 7;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // btThemHangHoa
-            // 
-            this.btThemHangHoa.Location = new System.Drawing.Point(21, 22);
-            this.btThemHangHoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btThemHangHoa.Name = "btThemHangHoa";
-            this.btThemHangHoa.Size = new System.Drawing.Size(105, 43);
-            this.btThemHangHoa.TabIndex = 8;
-            this.btThemHangHoa.Text = "Thêm";
-            this.btThemHangHoa.UseVisualStyleBackColor = true;
-            this.btThemHangHoa.Click += new System.EventHandler(this.btThemHangHoa_Click);
             // 
             // dgvDanhSachHangHoa
             // 
@@ -114,14 +81,14 @@
             this.SoLuongTrungBay,
             this.GhiChu,
             this.HinhAnh});
-            this.dgvDanhSachHangHoa.Location = new System.Drawing.Point(12, 119);
+            this.dgvDanhSachHangHoa.Location = new System.Drawing.Point(6, 20);
             this.dgvDanhSachHangHoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvDanhSachHangHoa.MultiSelect = false;
             this.dgvDanhSachHangHoa.Name = "dgvDanhSachHangHoa";
             this.dgvDanhSachHangHoa.ReadOnly = true;
             this.dgvDanhSachHangHoa.RowHeadersVisible = false;
             this.dgvDanhSachHangHoa.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDanhSachHangHoa.Size = new System.Drawing.Size(1019, 390);
+            this.dgvDanhSachHangHoa.Size = new System.Drawing.Size(1006, 372);
             this.dgvDanhSachHangHoa.TabIndex = 4;
             this.dgvDanhSachHangHoa.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachHangHoa_CellClick);
             // 
@@ -212,39 +179,169 @@
             this.HinhAnh.ReadOnly = true;
             this.HinhAnh.Visible = false;
             // 
-            // panel1
+            // btnSuaThongTin
             // 
-            this.panel1.Controls.Add(this.btThemHangHoa);
-            this.panel1.Controls.Add(this.btnInDanhSach);
-            this.panel1.Controls.Add(this.btnXoa);
-            this.panel1.Controls.Add(this.btnSuaThongTin);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(450, 100);
-            this.panel1.TabIndex = 9;
+            this.btnSuaThongTin.Location = new System.Drawing.Point(160, 27);
+            this.btnSuaThongTin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSuaThongTin.Name = "btnSuaThongTin";
+            this.btnSuaThongTin.Size = new System.Drawing.Size(107, 26);
+            this.btnSuaThongTin.TabIndex = 6;
+            this.btnSuaThongTin.Text = "Sửa thông tin";
+            this.btnSuaThongTin.UseVisualStyleBackColor = true;
+            this.btnSuaThongTin.Click += new System.EventHandler(this.btnSuaThongTin_Click);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Location = new System.Drawing.Point(20, 60);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(105, 26);
+            this.btnXoa.TabIndex = 7;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // btnInDanhSach
+            // 
+            this.btnInDanhSach.Location = new System.Drawing.Point(160, 61);
+            this.btnInDanhSach.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnInDanhSach.Name = "btnInDanhSach";
+            this.btnInDanhSach.Size = new System.Drawing.Size(107, 26);
+            this.btnInDanhSach.TabIndex = 5;
+            this.btnInDanhSach.Text = "In danh sách";
+            this.btnInDanhSach.UseVisualStyleBackColor = true;
+            // 
+            // btThemHangHoa
+            // 
+            this.btThemHangHoa.Location = new System.Drawing.Point(20, 25);
+            this.btThemHangHoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btThemHangHoa.Name = "btThemHangHoa";
+            this.btThemHangHoa.Size = new System.Drawing.Size(105, 28);
+            this.btThemHangHoa.TabIndex = 8;
+            this.btThemHangHoa.Text = "Thêm";
+            this.btThemHangHoa.UseVisualStyleBackColor = true;
+            this.btThemHangHoa.Click += new System.EventHandler(this.btThemHangHoa_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btThemHangHoa);
+            this.groupBox1.Controls.Add(this.btnInDanhSach);
+            this.groupBox1.Controls.Add(this.btnSuaThongTin);
+            this.groupBox1.Controls.Add(this.btnXoa);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(316, 104);
+            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Thao tác";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.dgvDanhSachHangHoa);
+            this.groupBox2.Location = new System.Drawing.Point(13, 134);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1018, 399);
+            this.groupBox2.TabIndex = 11;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Danh sách hàng hóa";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.radioButton4);
+            this.groupBox3.Controls.Add(this.radioButton3);
+            this.groupBox3.Controls.Add(this.radioButton2);
+            this.groupBox3.Controls.Add(this.radioButton1);
+            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Controls.Add(this.textBox1);
+            this.groupBox3.Location = new System.Drawing.Point(350, 13);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(681, 103);
+            this.groupBox3.TabIndex = 12;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Tìm kiếm";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(281, 38);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(235, 20);
+            this.textBox1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(543, 38);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Tìm kiếm";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(27, 26);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(85, 17);
+            this.radioButton1.TabIndex = 2;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(27, 59);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(85, 17);
+            this.radioButton2.TabIndex = 3;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "radioButton2";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(141, 26);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(85, 17);
+            this.radioButton3.TabIndex = 4;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "radioButton3";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(141, 59);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(85, 17);
+            this.radioButton4.TabIndex = 5;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "radioButton4";
+            this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // fr_QuanLyHangHoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1043, 545);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dgvDanhSachHangHoa);
+            this.ClientSize = new System.Drawing.Size(1044, 545);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Name = "fr_QuanLyHangHoa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QUẢN LÝ HÀNG HÓA";
             this.Load += new System.EventHandler(this.fr_QuanLyHangHoa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachHangHoa)).EndInit();
-            this.panel1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btnInDanhSach;
-        private System.Windows.Forms.Button btnSuaThongTin;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btThemHangHoa;
         private System.Windows.Forms.DataGridView dgvDanhSachHangHoa;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaHangHoa;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenHangHoa;
@@ -257,6 +354,18 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongTrungBay;
         private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
         private System.Windows.Forms.DataGridViewTextBoxColumn HinhAnh;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnSuaThongTin;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnInDanhSach;
+        private System.Windows.Forms.Button btThemHangHoa;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

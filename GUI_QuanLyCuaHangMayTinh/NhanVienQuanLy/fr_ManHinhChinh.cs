@@ -19,7 +19,10 @@ namespace GUI_QuanLyCuaHangMayTinh.NhanVienQuanLy
 
         private void btnQuanLyNhaSanXuat_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("nhà sản xuất");
+            this.Hide();
+            fr_QuanLyNhaSanXuat qlnhasanxuat = new fr_QuanLyNhaSanXuat();
+            qlnhasanxuat.ShowDialog();
+            this.Show();
         }
 
         private void btnQuanLyDanhMuc_Click(object sender, EventArgs e)
@@ -39,5 +42,7 @@ namespace GUI_QuanLyCuaHangMayTinh.NhanVienQuanLy
             qlhanghoa.ShowDialog();
             this.Show();
         }
+
+    
     }
 }
